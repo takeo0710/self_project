@@ -56,11 +56,11 @@ input[type="button"],input[type="text"],input[type="submit"],input[type="image"]
 common
 ----------------------------------*/
 .u-sp {
-  display: none;
+  display: block;
 }
 
 .u-pc {
-  display: block;
+  display: none;
 }
 
 /*----------------------------------
@@ -120,6 +120,21 @@ header h1 a img {
 
 .header-ham span:after {
   top: 10px;
+}
+
+/*----------------------------------
+main
+----------------------------------*/
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.wrap {
+  width: 100%;
 }
 
 /*----------------------------------
@@ -200,11 +215,11 @@ footer small {
 common
 ----------------------------------*/
 .u-sp {
-  display: block;
+  display: none;
 }
 
 .u-pc {
-  display: none;
+  display: block;
 }
 
 /* header */
@@ -212,6 +227,16 @@ common
   margin: 0 auto;
   width: 1000px;
   max-width: 100%;
+}
+
+/* main */
+.wrap {
+  width: calc(100% - 300px);
+}
+
+/* sidebar */
+.sidebar {
+  width: 250px;
 }
 
 /* footer */

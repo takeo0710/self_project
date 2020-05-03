@@ -11,8 +11,12 @@
 <body>
   <div id="app">
     @include('layouts/header')
+
     <main>
-      @yield('content')
+      <div class="wrap">
+        @yield('content')
+      </div>
+      @include('layouts/sidebar')
     </main>
 
     @include('layouts/footer')
