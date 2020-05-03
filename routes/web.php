@@ -17,6 +17,22 @@ Route::get('/', function () {
     return view('top');
 })->name('top');
 
+Route::get('/terms', function () {
+    return view('others/terms');
+})->name('terms');
+
+Route::get('/privacy', function () {
+    return view('others/privacy');
+})->name('privacy');
+
+Route::get('/sitemap', function () {
+    return view('others/sitemap');
+})->name('sitemap');
+
+Route::get('/about', function () {
+    return view('others/about');
+})->name('about');
+
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'middleware' => 'guest:admin'], function() {

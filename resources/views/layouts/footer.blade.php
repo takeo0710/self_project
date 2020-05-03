@@ -13,7 +13,7 @@
       <li>
         <a href="">その他</a>
         <ul class="footer-menu-links">
-          <li><a href="">サイトマップ</a></li>
+          <li><a href="{{ route('sitemap') }}">サイトマップ</a></li>
           <li><a href="">セルフエステとは</a></li>
           <li><a href="">お役立ちページ</a></li>
           <li><a href="">お知らせ</a></li>
@@ -23,9 +23,9 @@
         <a href="">詳細</a>
         <ul class="footer-menu-links">
           <li><a href="">運営会社</a></li>
-          <li><a href="">利用規約</a></li>
+          <li><a href="{{ route('terms') }}">利用規約</a></li>
+          <li><a href="{{ route('privacy') }}">プライバシーポリシー</a></li>
           <li><a href="">お問い合わせ</a></li>
-          <li><a href="">よくある質問</a></li>
         </ul>
       </li>
       <li>
