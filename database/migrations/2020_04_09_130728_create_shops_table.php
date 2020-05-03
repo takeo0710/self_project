@@ -15,6 +15,8 @@ class CreateShopsTable extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('admin_id')->unsigned();
+            $table->foreign('admin_id')->references('id')->on('admins');
             $table->string('name');
             $table->string('prefecture');
             $table->string('municipality');
